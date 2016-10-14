@@ -1,0 +1,11 @@
+c:\users\jrguay\documents\visual studio 2010\Projects\TR.Demo\TR.Demo\bin\TR.Demo.dll
+c:\users\jrguay\documents\visual studio 2010\Projects\TR.Demo\TR.Demo\bin\TR.Demo.pdb
+c:\users\jrguay\documents\visual studio 2010\Projects\TR.Demo\TR.Demo\obj\Debug\ResolveAssemblyReference.cache
+c:\users\jrguay\documents\visual studio 2010\Projects\TR.Demo\TR.Demo\obj\Debug\TR.Demo.dll
+c:\users\jrguay\documents\visual studio 2010\Projects\TR.Demo\TR.Demo\obj\Debug\TR.Demo.pdb
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TR.Demo\TR.Demo\bin\TR.Reports.dll
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TR.Demo\TR.Demo\bin\TR.Data.dll
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TR.Demo\TR.Demo\bin\TR.Reports.pdb
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TR.Demo\TR.Demo\bin\TR.Data.pdb
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TR.Demo\TR.Demo\bin\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TR.Demo\TR.Demo\bin\Telerik.OpenAccess.35.Extensions.xml

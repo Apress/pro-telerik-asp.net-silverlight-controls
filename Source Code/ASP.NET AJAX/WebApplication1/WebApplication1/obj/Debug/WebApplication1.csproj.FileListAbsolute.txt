@@ -1,0 +1,9 @@
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\bin\App_Data\RadSpell\de-DE.tdf
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\bin\App_Data\RadSpell\en-US.tdf
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\bin\App_Data\RadSpell\fr-FR.tdf
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\bin\Telerik.Web.UI.xml
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\jrguay\documents\visual studio 2010\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

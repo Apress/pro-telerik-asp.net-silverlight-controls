@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WebApplication1.RadComboBox_WCFProductsService" CodeBehind="RadComboBox_WCFProductsService.svc.cs" %>

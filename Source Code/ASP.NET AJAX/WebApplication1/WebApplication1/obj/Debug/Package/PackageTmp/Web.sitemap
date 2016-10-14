@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="Root"  description="">
+      <siteMapNode url="" title="Services" description="Our range of services is so complete you will end up hiring us">
+        <siteMapNode url="" title="Web Development"  description="Need a custom development? We are here for you." />
+        <siteMapNode url="" title="Web Hosting"  description="For all your hosting needs we provide the most reliable and full featured plans" />
+        <siteMapNode url="" title="SEO"  description="Our SEO services will garantee your website will ve visible to the whole world" />
+      </siteMapNode>
+      <siteMapNode url="" title="Products"  description="Products created thinking of you">
+        <siteMapNode url="" title="CRM"  description="Our CRM tool is what you need to keep and ehance your client relations" />
+        <siteMapNode url="" title="Portal"  description="The portal solution that will integrate all of your company departments in one place" />
+        <siteMapNode url="" title="UI Components"  description="UI components to aid in the development of new solutions" />
+      </siteMapNode>
+      <siteMapNode url="" title="About Us" description="Want to know about us?">
+        <siteMapNode url="" title="Company History"  description="How we came to be." />
+        <siteMapNode url="" title="Our Team"  description="Want to meet us?" />
+        <siteMapNode url="" title="Carrers"  description="Want to join us?" />
+        <siteMapNode url="" title="Contact"  description="Want to contact us?" />
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

@@ -1,0 +1,45 @@
+﻿<navigation:Page x:Class="ProTelerikDemo.Views.Categories" 
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 mc:Ignorable="d"
+                 xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+                 xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+                 xmlns:telerikData="clr-namespace:Telerik.Windows.Data;assembly=Telerik.Windows.Data"
+                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                 d:DesignWidth="640" 
+                 d:DesignHeight="480"
+                 Title="Categories Page">
+    <Grid x:Name="LayoutRoot" Width="700">
+        <telerik:RadGridView x:Name="categoriesGridView"
+                             AutoGenerateColumns="False" 
+                             CanUserInsertRows="True"
+                             IsReadOnly="False"
+                             AddingNewDataItem="categoriesGridView_AddingNewDataItem"
+                             RowEditEnded="categoriesGridView_RowEditEnded">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn Header="Category ID" 
+                                            DataMemberBinding="{Binding CategoryID}"
+                                            IsReadOnly="True" />
+                <telerik:GridViewDataColumn Header="Category Name" 
+                                            DataMemberBinding="{Binding CategoryName, Mode=TwoWay}" />
+                <telerik:GridViewDataColumn Header="Description" 
+                                            DataMemberBinding="{Binding Description, Mode=TwoWay}" />
+            </telerik:RadGridView.Columns>
+            
+            <telerikNavigation:RadContextMenu.ContextMenu>
+                <telerikNavigation:RadContextMenu x:Name="gridContextMenu" 
+                                                  Opened="gridContextMenu_Opened" 
+                                                  ItemClick="gridContextMenu_ItemClick">
+                    <telerikNavigation:RadContextMenu.Items>
+                        <telerikNavigation:RadMenuItem Header="Add" />
+                        <telerikNavigation:RadMenuItem Header="Delete" />
+                    </telerikNavigation:RadContextMenu.Items>
+                </telerikNavigation:RadContextMenu>
+            </telerikNavigation:RadContextMenu.ContextMenu>
+
+        </telerik:RadGridView>
+        
+    </Grid>
+</navigation:Page>

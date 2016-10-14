@@ -1,0 +1,13 @@
+C:\Users\jrguay\Documents\Visual Studio 2008\Projects\TelerikMvcApplication\TelerikMvcApplication\bin\TelerikMvcApplication.dll
+C:\Users\jrguay\Documents\Visual Studio 2008\Projects\TelerikMvcApplication\TelerikMvcApplication\bin\TelerikMvcApplication.pdb
+C:\Users\jrguay\Documents\Visual Studio 2008\Projects\TelerikMvcApplication\TelerikMvcApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jrguay\Documents\Visual Studio 2008\Projects\TelerikMvcApplication\TelerikMvcApplication\obj\Debug\TelerikMvcApplication.dll
+C:\Users\jrguay\Documents\Visual Studio 2008\Projects\TelerikMvcApplication\TelerikMvcApplication\obj\Debug\TelerikMvcApplication.pdb
+C:\Users\jrguay\Documents\Visual Studio 2008\Projects\TelerikMvcApplication\TelerikMvcApplication\bin\Telerik.Web.Mvc.dll
+C:\Users\jrguay\Documents\Visual Studio 2008\Projects\TelerikMvcApplication\TelerikMvcApplication\bin\Telerik.Web.Mvc.xml
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TelerikMvcApplication\TelerikMvcApplication\bin\TelerikMvcApplication.dll
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TelerikMvcApplication\TelerikMvcApplication\bin\TelerikMvcApplication.pdb
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TelerikMvcApplication\TelerikMvcApplication\bin\Telerik.Web.Mvc.xml
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TelerikMvcApplication\TelerikMvcApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TelerikMvcApplication\TelerikMvcApplication\obj\Debug\TelerikMvcApplication.dll
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\TelerikMvcApplication\TelerikMvcApplication\obj\Debug\TelerikMvcApplication.pdb

@@ -1,0 +1,10 @@
+﻿<Items>
+ <Item Text="Mercury" Value="1" />
+ <Item Text="Venus" Value="2" />
+ <Item Text="Earth" Value="3" Selected="true" />
+ <Item Text="Mars" Value="4" />
+ <Item Text="Jupiter" Value="5" />
+ <Item Text="Saturn" Value="6" />
+ <Item Text="Uranus" Value="7" />
+ <Item Text="Neptune" Value="8" />
+</Items>

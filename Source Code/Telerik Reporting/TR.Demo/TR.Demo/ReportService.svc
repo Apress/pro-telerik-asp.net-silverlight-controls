@@ -1,0 +1,5 @@
+﻿<%@ServiceHost Service="Telerik.Reporting.Service.ReportService, 
+                        Telerik.Reporting.Service, 
+                        Version=4.0.10.421, 
+                        Culture=neutral, 
+                        PublicKeyToken=A9D7983DFCC261BE" %>

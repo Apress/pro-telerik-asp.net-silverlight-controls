@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+    <siteMapNode title="Home" controller="Home"  action="Index">
+      <siteMapNode title="RadCalendar">
+        <siteMapNode title="Min/Max/Selected Dates" controller="Calendar" action="MinMaxDates" />
+        <siteMapNode title="Select Action" controller="Calendar" action="SelectAction" />
+        <siteMapNode title="Globalization" controller="Calendar" action="Globalization" />
+        <siteMapNode title="Client API" controller="Calendar" action="ClientAPI" />
+      </siteMapNode>
+      <siteMapNode title="RadDatePicker">
+        <siteMapNode title="Min/Max/Selected Dates" controller="DatePicker" action="MinMaxDates" />
+        <siteMapNode title="Date Parsing" controller="DatePicker" action="DateParsing" />
+        <siteMapNode title="Globalization" controller="DatePicker" action="Globalization" />
+        <siteMapNode title="Client API" controller="DatePicker" action="ClientAPI" />
+      </siteMapNode>
+      <siteMapNode title="RadNumericTextBox">
+        <siteMapNode title="Min/Max Values" controller="NumericTextBox" action="MinMaxValues" />
+        <siteMapNode title="Server Validation" controller="NumericTextBox" action="ServerValidation" />
+        <siteMapNode title="Client Validation" controller="NumericTextBox" action="ClientValidation" />
+        <siteMapNode title="Globalization" controller="NumericTextBox" action="Globalization" />
+        <siteMapNode title="Client API" controller="NumericTextBox" action="ClientAPI" />
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

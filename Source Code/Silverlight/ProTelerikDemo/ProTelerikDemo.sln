@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProTelerikDemo", "ProTelerikDemo\ProTelerikDemo.csproj", "{A7505DDD-A6E5-4C01-B112-3468635C4740}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3F31C586-7797-4FBD-ABB5-89B5FA8A74DE} = {3F31C586-7797-4FBD-ABB5-89B5FA8A74DE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProTelerikDemo.Web", "ProTelerikDemo.Web\ProTelerikDemo.Web.csproj", "{3F31C586-7797-4FBD-ABB5-89B5FA8A74DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7505DDD-A6E5-4C01-B112-3468635C4740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7505DDD-A6E5-4C01-B112-3468635C4740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7505DDD-A6E5-4C01-B112-3468635C4740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7505DDD-A6E5-4C01-B112-3468635C4740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F31C586-7797-4FBD-ABB5-89B5FA8A74DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F31C586-7797-4FBD-ABB5-89B5FA8A74DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F31C586-7797-4FBD-ABB5-89B5FA8A74DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F31C586-7797-4FBD-ABB5-89B5FA8A74DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2 @@
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\ProTelerikDemo\ProTelerikDemo\Generated_Code\ProTelerikDemo.Web.g.cs
+C:\Users\jrguay\Documents\Visual Studio 2010\Projects\ProTelerikDemo\ProTelerikDemo\Generated_Code\Models\Shared\User.shared.cs

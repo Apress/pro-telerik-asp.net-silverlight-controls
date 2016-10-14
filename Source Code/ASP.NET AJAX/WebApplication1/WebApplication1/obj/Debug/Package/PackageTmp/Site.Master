@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 141px;
+            height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true">
+    <Services>
+        <asp:ServiceReference Path="~/SchedulerWebService.asmx" />
+    </Services>
+    </telerik:RadScriptManager>
+    <telerik:RadStyleSheetManager ID="RadStyleSheetManager1" runat="server">
+    </telerik:RadStyleSheetManager>
+    <div class="page">
+        <div class="header">
+            <div class="logoleft">
+                <img alt="" src="Images/telerik_logo.png" />
+            </div>
+            <div class="title">
+                <h1>
+                    Pro Telerik ASP.NET & Silverlight Controls
+                </h1>
+                <h3>
+                Jose R. Guay Paz
+                </h3>
+            </div>
+            <div class="logoright">
+                <img alt="" src="Images/Apress_120x60.gif" />
+            </div>
+            <div class="clear hideSkiplink">
+                <telerik:RadMenu ID="RadMenu1" runat="server" Skin="WebBlue">
+                </telerik:RadMenu>
+            </div>
+            <br />
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

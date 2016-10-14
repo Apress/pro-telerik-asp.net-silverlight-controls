@@ -1,0 +1,53 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="Telerik.Web.Mvc.UI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>Pro Telerik ASP.NET And Silverlight Controls - Jose Rolando Guay Paz</h1>
+            </div>
+              
+            <div id="logindisplay">
+                &nbsp;
+            </div> 
+            
+            <div id="menucontainer">
+            
+                <ul id="menu">              
+                    <li><%= Html.ActionLink("Home", "Index", "Home")%></li>
+                    <li><%= Html.ActionLink("Calendar", "Index", "Calendar")%></li>
+                    <li><%= Html.ActionLink("DatePicker", "Index", "DatePicker")%></li>
+                    <li><%= Html.ActionLink("NumericTextBox", "Index", "NumericTextBox")%></li>
+                    <li><%= Html.ActionLink("Menu", "Index", "Menu")%></li>
+                    <li><%= Html.ActionLink("PanelBar", "Index", "PanelBar")%></li>
+                    <li><%= Html.ActionLink("TabStrip", "Index", "TabStrip")%></li>
+                    <li><%= Html.ActionLink("TreeView", "Index", "TreeView")%></li>
+                    <li><%= Html.ActionLink("Grid", "Index", "Grid")%></li>
+                </ul>
+            
+            </div>
+        </div>
+
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+    <%= Html.Telerik().ScriptRegistrar() %>
+    <%= Html.Telerik().StyleSheetRegistrar()
+            .DefaultGroup(group => group.Add("telerik.common.css")
+                                        .Add("telerik.windows7.css"))
+    %>
+</body>
+</html>

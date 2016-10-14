@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="RadControls for ASP.NET" >
+      <Group>
+        <Item Text="Chapter 3 - Input Controls" >
+          <Group>
+            <Item Text="RadInput" NavigateUrl="RadInput.aspx" ImageUrl="Images/ProductIcons/ajax/input.png"></Item>
+            <Item Text="RadRadEditor" NavigateUrl="RadEditor_Page.aspx" ImageUrl="Images/ProductIcons/ajax/editor.png"></Item>
+          </Group>
+        </Item>
+        <Item Text="Chapter 4 - Navigation Controls" >
+          <Group>
+            <Item Text="RadMenu" NavigateUrl="RadMenu_Page.aspx" ImageUrl="Images/ProductIcons/ajax/menu.png"></Item>
+            <Item Text="RadToolBar" NavigateUrl="RadToolBar_Page.aspx" ImageUrl="Images/ProductIcons/ajax/toolbar.png"></Item>
+            <Item Text="RadTreeView" NavigateUrl="RadTreeView_Page.aspx" ImageUrl="Images/ProductIcons/ajax/treeview.png"></Item>
+            <Item Text="RadSiteMap" NavigateUrl="RadSiteMap_Page.aspx" ImageUrl="Images/ProductIcons/ajax/sitemap.png"></Item>
+            <Item Text="RadPanelBar" NavigateUrl="RadPanelBar_Page.aspx" ImageUrl="Images/ProductIcons/ajax/panelbar.png"></Item>
+          </Group>
+        </Item>
+        <Item Text="Chapter 5 - Date, Time And Scheduling Controls" >
+          <Group>
+            <Item Text="RadCalendar" NavigateUrl="RadCalendar_Page.aspx" ImageUrl="Images/ProductIcons/ajax/calendar.png"></Item>
+            <Item Text="RadScheduler" NavigateUrl="RadScheduler_Page.aspx" ImageUrl="Images/ProductIcons/ajax/scheduler.png"></Item>
+          </Group>
+        </Item>
+        <Item Text="Chapter 6 - Data Controls" >
+          <Group>
+            <Item Text="RadComboBox" NavigateUrl="RadComboBox_Page.aspx" ImageUrl="Images/ProductIcons/ajax/combobox.png"></Item>
+            <Item Text="RadGrid" NavigateUrl="RadGrid_Page.aspx" ImageUrl="Images/ProductIcons/ajax/grid.png"></Item>
+            <Item Text="RadFilter" NavigateUrl="RadFilter_Page.aspx" ImageUrl="Images/ProductIcons/ajax/filter.png"></Item>
+            <Item Text="RadListBox" NavigateUrl="RadListBox_Page.aspx" ImageUrl="Images/ProductIcons/ajax/listbox.png"></Item>
+            <Item Text="RadListView" NavigateUrl="RadListView_Page.aspx" ImageUrl="Images/ProductIcons/ajax/listview.png"></Item>
+          </Group>
+        </Item>
+        <Item Text="Chapter 7 - Layout Controls" >
+          <Group>
+            <Item Text="RadTabStrip" NavigateUrl="RadTabStrip_Page.aspx" ImageUrl="Images/ProductIcons/ajax/tabstrip.png"></Item>
+            <Item Text="RadWindow" NavigateUrl="RadWindow_Page.aspx" ImageUrl="Images/ProductIcons/ajax/window.png"></Item>
+            <Item Text="RadSplitter" NavigateUrl="RadSplitter_Page.aspx" ImageUrl="Images/ProductIcons/ajax/splitter.png"></Item>
+            <Item Text="RadDock" NavigateUrl="RadDock_Page.aspx" ImageUrl="Images/ProductIcons/ajax/dock.png"></Item>
+            <Item Text="RadRotator" NavigateUrl="RadRotator_Page.aspx" ImageUrl="Images/ProductIcons/ajax/rotator.png"></Item>
+          </Group>
+        </Item>
+        <Item Text="Chapter 8 - Chart And Image Controls" >
+          <Group>
+            <Item Text="RadChart" NavigateUrl="RadChart_Page.aspx" ImageUrl="Images/ProductIcons/ajax/chart.png"></Item>
+            <Item Text="RadBinaryImage" NavigateUrl="RadBinaryImage_Page.aspx" ImageUrl="Images/ProductIcons/ajax/binaryimage.png"></Item>
+            <Item Text="RadRating" NavigateUrl="RadRating_Page.aspx" ImageUrl="Images/ProductIcons/ajax/rating.png"></Item>
+            <Item Text="RadColorPicker" NavigateUrl="RadColorPicker_Page.aspx" ImageUrl="Images/ProductIcons/ajax/colorpicker.png"></Item>
+          </Group>
+        </Item>
+        <Item Text="Chapter 9 - Specific Purpose Controls">
+          <Group>
+            <Item Text="RadFormDecorator" NavigateUrl="RadFormDecorator_Page.aspx" ImageUrl="Images/ProductIcons/ajax/formdecorator.png"></Item>
+            <Item Text="RadToolTip" NavigateUrl="RadToolTip_Page.aspx" ImageUrl="Images/ProductIcons/ajax/tooltip.png"></Item>
+            <Item Text="RadUpload" NavigateUrl="RadUpload_Page.aspx" ImageUrl="Images/ProductIcons/ajax/upload_white.png"></Item>
+            <Item Text="RadCaptcha" NavigateUrl="RadCaptcha_Page.aspx" ImageUrl="Images/ProductIcons/ajax/captcha.png"></Item>
+            <Item Text="RadSlider" NavigateUrl="RadSlider_Page.aspx" ImageUrl="Images/ProductIcons/ajax/slider.png"></Item>
+            <Item Text="RadFileExplorer" NavigateUrl="RadFileExplorer_Page.aspx" ImageUrl="Images/ProductIcons/ajax/fileexplorer.png"></Item>
+          </Group>
+        </Item>
+        <Item Text="Chapter 10 - RadAjax">
+          <Group>
+            <Item Text="RadAjaxManager" NavigateUrl="RadAjaxManager_Page.aspx" ImageUrl="Images/ProductIcons/ajax/ajax.png"></Item>
+            <Item Text="RadAjaxManagerProxy" NavigateUrl="RadAjaxManagerProxy_Page.aspx" ImageUrl="Images/ProductIcons/ajax/ajax.png"></Item>
+            <Item Text="RadAjaxPanel" NavigateUrl="RadAjaxPanel_Page.aspx" ImageUrl="Images/ProductIcons/ajax/ajax.png"></Item>
+            <Item Text="RadAjaxLoadingPanel" NavigateUrl="RadAjaxLoadingPanel_Page.aspx" ImageUrl="Images/ProductIcons/ajax/ajax.png"></Item>
+            <Item Text="RadXmlHttpPanel" NavigateUrl="RadXmlHttpPanel_Page.aspx" ImageUrl="Images/ProductIcons/ajax/XmlHttpPanel.png"></Item>
+          </Group>
+        </Item>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

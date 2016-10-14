@@ -1,0 +1,121 @@
+﻿<navigation:Page x:Class="ProTelerikDemo.Views.Employees" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+           xmlns:radDock="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Docking"
+           xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+           xmlns:layer="clr-namespace:Telerik.Windows.Controls.Map;assembly=Telerik.Windows.Controls.DataVisualization"
+           xmlns:core="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Employees Page">
+    <navigation:Page.Resources>
+        <DataTemplate x:Key="TerritoryTemplate">
+            <TextBlock Text="{Binding TerritoryDescription}" />
+        </DataTemplate>
+        <telerik:HierarchicalDataTemplate x:Key="RegionTemplate" 
+                                          ItemsSource="{Binding Territories}" 
+                                          ItemTemplate="{StaticResource TerritoryTemplate}">
+            <TextBlock Text="{Binding RegionDescription}" />
+        </telerik:HierarchicalDataTemplate>
+    </navigation:Page.Resources>
+    <Grid x:Name="LayoutRoot">
+        
+        <radDock:RadDocking x:Name="radDocking1">
+            <radDock:RadDocking.DocumentHost>
+
+                <radDock:RadSplitContainer>
+                    <radDock:RadPaneGroup>
+                        <radDock:RadDocumentPane Title="Employees">
+                            <radDock:RadDocumentPane.Content>
+                                <telerik:RadGridView x:Name="gridEmployees" 
+                                                     IsReadOnly="True" 
+                                                     AutoGenerateColumns="False"
+                                                     ShowGroupPanel="False"
+                                                     CanUserSortColumns="False"
+                                                     IsFilteringAllowed="False"
+                                                     SelectionChanged="gridEmployees_SelectionChanged">
+                                    <telerik:RadGridView.Columns>
+                                        <telerik:GridViewDataColumn Header="ID" 
+                                                                    DataMemberBinding="{Binding EmployeeID}" />
+                                        <telerik:GridViewDataColumn Header="First Name" 
+                                                                    DataMemberBinding="{Binding FirstName}" />
+                                        <telerik:GridViewDataColumn Header="Last Name" 
+                                                                    DataMemberBinding="{Binding LastName}" />
+                                        <telerik:GridViewDataColumn Header="City" 
+                                                                    DataMemberBinding="{Binding City}" />
+                                        <telerik:GridViewDataColumn Header="Country" 
+                                                                    DataMemberBinding="{Binding Country}" />
+                                    </telerik:RadGridView.Columns>
+                                </telerik:RadGridView>
+                            </radDock:RadDocumentPane.Content>
+                        </radDock:RadDocumentPane>
+                    </radDock:RadPaneGroup>
+                </radDock:RadSplitContainer>
+
+            </radDock:RadDocking.DocumentHost>
+
+            <radDock:RadSplitContainer radDock:DockingPanel.InitialSize="150,150" MaxWidth="600"
+                    Name="LeftContainer" InitialPosition="DockedLeft">
+                <radDock:RadPaneGroup x:Name="Group1">
+                    <radDock:RadPane x:Name="Pane1" Header="Locations">
+                        <telerikNavigation:RadTreeView x:Name="treeLocations"
+                                                       IsLoadOnDemandEnabled="True"
+                                                       LoadOnDemand="treeLocations_LoadOnDemand"
+                                                       ItemPrepared="treeLocations_ItemPrepared"
+                                                       Selected="treeLocations_Selected"
+                                                       ItemTemplate="{StaticResource RegionTemplate}">
+                        </telerikNavigation:RadTreeView>
+                    </radDock:RadPane>
+                </radDock:RadPaneGroup>
+            </radDock:RadSplitContainer>
+
+            <radDock:RadSplitContainer radDock:DockingPanel.InitialSize="600,200"
+                    x:Name="RightContainer" InitialPosition="DockedRight">
+                <radDock:RadPaneGroup x:Name="Group2">
+                    <radDock:RadPane x:Name="Pane3" Header="Destination Map">
+                        <telerik:RadMap x:Name="RadMap1">
+                            <layer:InformationLayer Name="InformationLayer"/>
+                        </telerik:RadMap>
+                    </radDock:RadPane>
+                </radDock:RadPaneGroup>
+            </radDock:RadSplitContainer>
+
+            <radDock:RadSplitContainer radDock:DockingPanel.InitialSize="200,350"
+                    x:Name="BottomContainer" InitialPosition="DockedBottom">
+                <radDock:RadPaneGroup x:Name="Group3">
+                    <radDock:RadPane x:Name="Pane5" Header="Orders">
+                        <telerik:RadGridView x:Name="gridOrders" 
+                                             IsReadOnly="True" 
+                                             AutoGenerateColumns="False"
+                                             ShowGroupPanel="False"
+                                             CanUserSortColumns="False"
+                                             IsFilteringAllowed="False"
+                                             SelectionChanged="gridOrders_SelectionChanged">
+                            <telerik:RadGridView.Columns>
+                                <telerik:GridViewDataColumn Header="ID" 
+                                                            DataMemberBinding="{Binding OrderID}" />
+                                <telerik:GridViewDataColumn Header="Date" 
+                                                            DataMemberBinding="{Binding Path=OrderDate, StringFormat='MM-dd-yyyy'}" />
+                                <telerik:GridViewDataColumn Header="Address" 
+                                                            DataMemberBinding="{Binding ShipAddress}" />
+                                <telerik:GridViewDataColumn Header="City" 
+                                                            DataMemberBinding="{Binding ShipCity}" />
+                                <telerik:GridViewDataColumn Header="Region" 
+                                                            DataMemberBinding="{Binding ShipRegion}" />
+                                <telerik:GridViewDataColumn Header="Country" 
+                                                            DataMemberBinding="{Binding ShipCountry}" />
+                            </telerik:RadGridView.Columns>
+                        </telerik:RadGridView>
+                    </radDock:RadPane>
+                </radDock:RadPaneGroup>
+            </radDock:RadSplitContainer>
+
+
+        </radDock:RadDocking>
+
+    </Grid>
+</navigation:Page>

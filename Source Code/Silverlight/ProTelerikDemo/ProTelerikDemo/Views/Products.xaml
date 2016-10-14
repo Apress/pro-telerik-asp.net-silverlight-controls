@@ -1,0 +1,109 @@
+﻿<navigation:Page x:Class="ProTelerikDemo.Views.Products"            
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"            
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"            
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"           
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"           
+                 mc:Ignorable="d"           
+                 xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+                 xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"           
+                 d:DesignWidth="640" 
+                 d:DesignHeight="480"
+                 Title="Products Page">
+    <navigation:Page.Resources>
+
+        <!-- Style definition for the page title -->
+        <Style TargetType="TextBlock" x:Key="PageTitle">
+            <Setter Property="Foreground" Value="#0b4366" />
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Padding" Value="10 0" />
+            <Setter Property="Margin" Value="0 0 0 50" />
+        </Style>
+
+        <!-- Style definition for the book pages (left and right) -->
+        <DataTemplate x:Key="LeftPageTemplate">
+            <Border BorderBrush="Gray" BorderThickness="1">
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{Binding ProductName}" 
+                                    HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center" 
+                                    FontSize="18" 							
+                                    TextWrapping="Wrap" />
+                    <Image Source="{Binding ProductID, 
+                                    StringFormat=../Images/Products/Thumbs/\{0\}.jpg}" 
+                                HorizontalAlignment="Center"							
+                                VerticalAlignment="Center" 
+                                Width="200"
+                                Height="200"
+                                Grid.Row="1" />
+                    <TextBlock Text="{Binding UnitPrice, StringFormat=\{0:c\}}" 
+                                    HorizontalAlignment="Center" 
+                                    Grid.Row="2"							
+                                    VerticalAlignment="Center" 
+                                    FontSize="18"							
+                                    TextWrapping="Wrap" />
+                </Grid>
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="RightPageTemplate">
+            <Border BorderBrush="Gray" BorderThickness="1">
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{Binding ProductName}" 
+                                    HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center" 
+                                    FontSize="18"							
+                                    TextWrapping="Wrap" />
+                    <Image Source="{Binding ProductID, 
+                                    StringFormat=../Images/Products/Thumbs/\{0\}.jpg}" 
+                                HorizontalAlignment="Center"
+                                Width="200"
+                                Height="200"
+                                VerticalAlignment="Center" 
+                                Grid.Row="1" />
+                    <TextBlock Text="{Binding UnitPrice, StringFormat=\{0:c\}}" 
+                                    HorizontalAlignment="Center" 
+                                    Grid.Row="2"							
+                                    VerticalAlignment="Center" 
+                                    FontSize="18"							
+                                    TextWrapping="Wrap" />
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </navigation:Page.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Product Catalog" 
+                   Style="{StaticResource PageTitle}"
+                   Width="700"
+                   HorizontalAlignment="Center" />
+
+        <!-- RadBook definition -->
+        <telerikNavigation:RadBook x:Name="Products_RadBook" 
+                                   IsKeyboardNavigationEnabled="True"
+					               LeftPageTemplate="{StaticResource LeftPageTemplate}"
+					               RightPageTemplate="{StaticResource RightPageTemplate}" 
+                                   Grid.Row="1"
+                                   Width="700" 
+                                   Height="400" />
+
+    </Grid>
+    
+</navigation:Page>

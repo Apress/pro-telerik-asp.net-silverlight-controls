@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F31C586-7797-4FBD-ABB5-89B5FA8A74DE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProTelerikDemo.Web</RootNamespace>
+    <AssemblyName>ProTelerikDemo.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{A7505DDD-A6E5-4C01-B112-3468635C4740}|..\ProTelerikDemo\ProTelerikDemo.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel.DomainServices.EntityFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ServiceModel.DomainServices.Server" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Hosting" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\Images\Countries\Thumbs\Argentina.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Austria.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Belgium.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Brazil.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Canada.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Denmark.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Finland.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\France.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Germany.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Ireland.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Italy.gif" />
+    <Content Include="ClientBin\Images\Countries\Thumbs\Mexico.gif" />
+    <Content Include="ClientBin\Images\Customers\ALFKI.jpg" />
+    <Content Include="ClientBin\Images\Customers\ANATR.jpg" />
+    <Content Include="ClientBin\Images\Customers\ANTON.jpg" />
+    <Content Include="ClientBin\Images\Customers\AROUT.jpg" />
+    <Content Include="ClientBin\Images\Customers\BERGS.jpg" />
+    <Content Include="ClientBin\Images\Customers\BLAUS.jpg" />
+    <Content Include="ClientBin\Images\Customers\BLONP.jpg" />
+    <Content Include="ClientBin\Images\Customers\BOLID.jpg" />
+    <Content Include="ClientBin\Images\Customers\BONAP.jpg" />
+    <Content Include="ClientBin\Images\Customers\BOTTM.jpg" />
+    <Content Include="ClientBin\Images\Customers\BSBEV.jpg" />
+    <Content Include="ClientBin\Images\Customers\CACTU.jpg" />
+    <Content Include="ClientBin\Images\Customers\CENTC.jpg" />
+    <Content Include="ClientBin\Images\Customers\CHOPS.jpg" />
+    <Content Include="ClientBin\Images\Customers\COMMI.jpg" />
+    <Content Include="ClientBin\Images\Customers\CONSH.jpg" />
+    <Content Include="ClientBin\Images\Customers\DRACD.jpg" />
+    <Content Include="ClientBin\Images\Customers\DUMON.jpg" />
+    <Content Include="ClientBin\Images\Customers\EASTC.jpg" />
+    <Content Include="ClientBin\Images\Customers\ERNSH.jpg" />
+    <Content Include="ClientBin\Images\Customers\FAMIA.jpg" />
+    <Content Include="ClientBin\Images\Customers\FISSA.jpg" />
+    <Content Include="ClientBin\Images\Customers\FOLIG.jpg" />
+    <Content Include="ClientBin\Images\Customers\FOLKO.jpg" />
+    <Content Include="ClientBin\Images\Customers\FRANK.jpg" />
+    <Content Include="ClientBin\Images\Customers\FRANR.jpg" />
+    <Content Include="ClientBin\Images\Customers\FRANS.jpg" />
+    <Content Include="ClientBin\Images\Customers\FURIB.jpg" />
+    <Content Include="ClientBin\Images\Customers\GALED.jpg" />
+    <Content Include="ClientBin\Images\Customers\GODOS.jpg" />
+    <Content Include="ClientBin\Images\Customers\GOURL.jpg" />
+    <Content Include="ClientBin\Images\Customers\GREAL.jpg" />
+    <Content Include="ClientBin\Images\Customers\GROSR.jpg" />
+    <Content Include="ClientBin\Images\Customers\HANAR.jpg" />
+    <Content Include="ClientBin\Images\Customers\HILAA.jpg" />
+    <Content Include="ClientBin\Images\Customers\HUNGC.jpg" />
+    <Content Include="ClientBin\Images\Customers\HUNGO.jpg" />
+    <Content Include="ClientBin\Images\Customers\ISLAT.jpg" />
+    <Content Include="ClientBin\Images\Customers\KOENE.jpg" />
+    <Content Include="ClientBin\Images\Customers\LACOR.jpg" />
+    <Content Include="ClientBin\Images\Customers\LAMAI.jpg" />
+    <Content Include="ClientBin\Images\Customers\LAUGB.jpg" />
+    <Content Include="ClientBin\Images\Customers\LAZYK.jpg" />
+    <Content Include="ClientBin\Images\Customers\LEHMS.jpg" />
+    <Content Include="ClientBin\Images\Customers\LETSS.jpg" />
+    <Content Include="ClientBin\Images\Customers\LILAS.jpg" />
+    <Content Include="ClientBin\Images\Customers\LINOD.jpg" />
+    <Content Include="ClientBin\Images\Customers\LONEP.jpg" />
+    <Content Include="ClientBin\Images\Customers\MAGAA.jpg" />
+    <Content Include="ClientBin\Images\Customers\MAISD.jpg" />
+    <Content Include="ClientBin\Images\Customers\MEREP.jpg" />
+    <Content Include="ClientBin\Images\Customers\MORGK.jpg" />
+    <Content Include="ClientBin\Images\Customers\NORTS.jpg" />
+    <Content Include="ClientBin\Images\Customers\OCEAN.jpg" />
+    <Content Include="ClientBin\Images\Customers\OLDWO.jpg" />
+    <Content Include="ClientBin\Images\Customers\OTTIK.jpg" />
+    <Content Include="ClientBin\Images\Customers\PARIS.jpg" />
+    <Content Include="ClientBin\Images\Customers\PERIC.jpg" />
+    <Content Include="ClientBin\Images\Customers\PICCO.jpg" />
+    <Content Include="ClientBin\Images\Customers\PRINI.jpg" />
+    <Content Include="ClientBin\Images\Customers\QUEDE.jpg" />
+    <Content Include="ClientBin\Images\Customers\QUEEN.jpg" />
+    <Content Include="ClientBin\Images\Customers\QUICK.jpg" />
+    <Content Include="ClientBin\Images\Customers\RANCH.jpg" />
+    <Content Include="ClientBin\Images\Customers\RATTC.jpg" />
+    <Content Include="ClientBin\Images\Customers\REGGC.jpg" />
+    <Content Include="ClientBin\Images\Customers\RICAR.jpg" />
+    <Content Include="ClientBin\Images\Customers\RICSU.jpg" />
+    <Content Include="ClientBin\Images\Customers\ROMEY.jpg" />
+    <Content Include="ClientBin\Images\Customers\SANTG.jpg" />
+    <Content Include="ClientBin\Images\Customers\SAVEA.jpg" />
+    <Content Include="ClientBin\Images\Customers\SEVES.jpg" />
+    <Content Include="ClientBin\Images\Customers\SIMOB.jpg" />
+    <Content Include="ClientBin\Images\Customers\SPECD.jpg" />
+    <Content Include="ClientBin\Images\Customers\SPLIR.jpg" />
+    <Content Include="ClientBin\Images\Customers\SUPRD.jpg" />
+    <Content Include="ClientBin\Images\Customers\THEBI.jpg" />
+    <Content Include="ClientBin\Images\Customers\THECR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\ALFKI.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\ANATR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\ANTON.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\AROUT.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\BERGS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\BLAUS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\BLONP.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\BOLID.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\BONAP.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\BOTTM.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\BSBEV.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\CACTU.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\CENTC.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\CHOPS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\COMMI.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\CONSH.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\DRACD.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\DUMON.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\EASTC.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\ERNSH.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\FAMIA.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\FISSA.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\FOLIG.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\FOLKO.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\FRANK.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\FRANR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\FRANS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\FURIB.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\GALED.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\GODOS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\GOURL.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\GREAL.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\GROSR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\HANAR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\HILAA.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\HUNGC.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\HUNGO.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\ISLAT.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\KOENE.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LACOR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LAMAI.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LAUGB.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LAZYK.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LEHMS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LETSS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LILAS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LINOD.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\LONEP.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\MAGAA.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\MAISD.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\MEREP.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\MORGK.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\NORTS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\OCEAN.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\OLDWO.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\OTTIK.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\PARIS.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\PERIC.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\PICCO.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\PRINI.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\QUEDE.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\QUEEN.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\QUICK.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\RANCH.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\RATTC.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\REGGC.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\RICAR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\RICSU.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\ROMEY.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\SANTG.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\SAVEA.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\SEVES.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\SIMOB.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\SPECD.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\SPLIR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\SUPRD.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\THEBI.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\THECR.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\TOMSP.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\TORTU.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\TRADH.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\TRAIH.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\VAFFE.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\VICTE.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\VINET.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\WANDK.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\WARTH.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\WELLI.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\WHITC.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\WILMK.jpg" />
+    <Content Include="ClientBin\Images\Customers\Thumbs\WOLZA.jpg" />
+    <Content Include="ClientBin\Images\Customers\TOMSP.jpg" />
+    <Content Include="ClientBin\Images\Customers\TORTU.jpg" />
+    <Content Include="ClientBin\Images\Customers\TRADH.jpg" />
+    <Content Include="ClientBin\Images\Customers\TRAIH.jpg" />
+    <Content Include="ClientBin\Images\Customers\VAFFE.jpg" />
+    <Content Include="ClientBin\Images\Customers\VICTE.jpg" />
+    <Content Include="ClientBin\Images\Customers\VINET.jpg" />
+    <Content Include="ClientBin\Images\Customers\WANDK.jpg" />
+    <Content Include="ClientBin\Images\Customers\WARTH.jpg" />
+    <Content Include="ClientBin\Images\Customers\WELLI.jpg" />
+    <Content Include="ClientBin\Images\Customers\WHITC.jpg" />
+    <Content Include="ClientBin\Images\Customers\WILMK.jpg" />
+    <Content Include="ClientBin\Images\Customers\WOLZA.jpg" />
+    <Content Include="ClientBin\Images\Products\1.jpg" />
+    <Content Include="ClientBin\Images\Products\10.jpg" />
+    <Content Include="ClientBin\Images\Products\11.jpg" />
+    <Content Include="ClientBin\Images\Products\12.jpg" />
+    <Content Include="ClientBin\Images\Products\13.jpg" />
+    <Content Include="ClientBin\Images\Products\14.jpg" />
+    <Content Include="ClientBin\Images\Products\15.jpg" />
+    <Content Include="ClientBin\Images\Products\16.jpg" />
+    <Content Include="ClientBin\Images\Products\17.jpg" />
+    <Content Include="ClientBin\Images\Products\18.jpg" />
+    <Content Include="ClientBin\Images\Products\19.jpg" />
+    <Content Include="ClientBin\Images\Products\2.jpg" />
+    <Content Include="ClientBin\Images\Products\20.jpg" />
+    <Content Include="ClientBin\Images\Products\21.jpg" />
+    <Content Include="ClientBin\Images\Products\22.jpg" />
+    <Content Include="ClientBin\Images\Products\23.jpg" />
+    <Content Include="ClientBin\Images\Products\24.jpg" />
+    <Content Include="ClientBin\Images\Products\25.jpg" />
+    <Content Include="ClientBin\Images\Products\26.jpg" />
+    <Content Include="ClientBin\Images\Products\27.jpg" />
+    <Content Include="ClientBin\Images\Products\28.jpg" />
+    <Content Include="ClientBin\Images\Products\29.jpg" />
+    <Content Include="ClientBin\Images\Products\3.jpg" />
+    <Content Include="ClientBin\Images\Products\30.jpg" />
+    <Content Include="ClientBin\Images\Products\31.jpg" />
+    <Content Include="ClientBin\Images\Products\32.jpg" />
+    <Content Include="ClientBin\Images\Products\33.jpg" />
+    <Content Include="ClientBin\Images\Products\34.jpg" />
+    <Content Include="ClientBin\Images\Products\35.jpg" />
+    <Content Include="ClientBin\Images\Products\36.jpg" />
+    <Content Include="ClientBin\Images\Products\37.jpg" />
+    <Content Include="ClientBin\Images\Products\38.jpg" />
+    <Content Include="ClientBin\Images\Products\39.jpg" />
+    <Content Include="ClientBin\Images\Products\4.jpg" />
+    <Content Include="ClientBin\Images\Products\40.jpg" />
+    <Content Include="ClientBin\Images\Products\41.jpg" />
+    <Content Include="ClientBin\Images\Products\42.jpg" />
+    <Content Include="ClientBin\Images\Products\43.jpg" />
+    <Content Include="ClientBin\Images\Products\44.jpg" />
+    <Content Include="ClientBin\Images\Products\45.jpg" />
+    <Content Include="ClientBin\Images\Products\46.jpg" />
+    <Content Include="ClientBin\Images\Products\47.jpg" />
+    <Content Include="ClientBin\Images\Products\48.jpg" />
+    <Content Include="ClientBin\Images\Products\49.jpg" />
+    <Content Include="ClientBin\Images\Products\5.jpg" />
+    <Content Include="ClientBin\Images\Products\50.jpg" />
+    <Content Include="ClientBin\Images\Products\51.jpg" />
+    <Content Include="ClientBin\Images\Products\52.jpg" />
+    <Content Include="ClientBin\Images\Products\53.jpg" />
+    <Content Include="ClientBin\Images\Products\54.jpg" />
+    <Content Include="ClientBin\Images\Products\55.jpg" />
+    <Content Include="ClientBin\Images\Products\56.jpg" />
+    <Content Include="ClientBin\Images\Products\57.jpg" />
+    <Content Include="ClientBin\Images\Products\58.jpg" />
+    <Content Include="ClientBin\Images\Products\59.jpg" />
+    <Content Include="ClientBin\Images\Products\6.jpg" />
+    <Content Include="ClientBin\Images\Products\60.jpg" />
+    <Content Include="ClientBin\Images\Products\61.jpg" />
+    <Content Include="ClientBin\Images\Products\62.jpg" />
+    <Content Include="ClientBin\Images\Products\63.jpg" />
+    <Content Include="ClientBin\Images\Products\64.jpg" />
+    <Content Include="ClientBin\Images\Products\65.jpg" />
+    <Content Include="ClientBin\Images\Products\66.jpg" />
+    <Content Include="ClientBin\Images\Products\67.jpg" />
+    <Content Include="ClientBin\Images\Products\68.jpg" />
+    <Content Include="ClientBin\Images\Products\69.jpg" />
+    <Content Include="ClientBin\Images\Products\7.jpg" />
+    <Content Include="ClientBin\Images\Products\70.jpg" />
+    <Content Include="ClientBin\Images\Products\71.jpg" />
+    <Content Include="ClientBin\Images\Products\72.jpg" />
+    <Content Include="ClientBin\Images\Products\73.jpg" />
+    <Content Include="ClientBin\Images\Products\74.jpg" />
+    <Content Include="ClientBin\Images\Products\75.jpg" />
+    <Content Include="ClientBin\Images\Products\76.jpg" />
+    <Content Include="ClientBin\Images\Products\77.jpg" />
+    <Content Include="ClientBin\Images\Products\78.jpg" />
+    <Content Include="ClientBin\Images\Products\79.jpg" />
+    <Content Include="ClientBin\Images\Products\8.jpg" />
+    <Content Include="ClientBin\Images\Products\80.jpg" />
+    <Content Include="ClientBin\Images\Products\9.jpg" />
+    <Content Include="ClientBin\Images\Products\noImage.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\1.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\10.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\11.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\12.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\13.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\14.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\15.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\16.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\17.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\18.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\19.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\2.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\20.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\21.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\22.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\23.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\24.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\25.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\26.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\27.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\28.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\29.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\3.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\30.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\31.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\32.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\33.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\34.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\35.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\36.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\37.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\38.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\39.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\4.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\40.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\41.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\42.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\43.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\44.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\45.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\46.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\47.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\48.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\49.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\5.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\50.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\51.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\52.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\53.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\54.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\55.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\56.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\57.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\58.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\59.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\6.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\60.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\61.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\62.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\63.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\64.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\65.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\66.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\67.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\68.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\69.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\7.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\70.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\71.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\72.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\73.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\74.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\75.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\76.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\77.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\78.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\79.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\8.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\80.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\9.jpg" />
+    <Content Include="ClientBin\Images\Products\Thumbs\noImage.jpg" />
+    <Content Include="ClientBin\ProTelerikDemo.xap" />
+    <Content Include="ProTelerikDemoTestPage.aspx" />
+    <Content Include="ProTelerikDemoTestPage.html" />
+    <Content Include="Silverlight.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Northwind.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Northwind.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ValidationErrorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidationErrorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RegistrationDataResources.Designer.cs">
+      <DependentUpon>RegistrationDataResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\RegistrationData.cs" />
+    <Compile Include="Services\NorthwindDomainService.cs" />
+    <Compile Include="Services\NorthwindDomainService.metadata.cs" />
+    <Compile Include="Services\UserRegistrationService.cs" />
+    <Compile Include="Models\Shared\User.shared.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ValidationErrorResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationErrorResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RegistrationDataResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RegistrationDataResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Northwind.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Northwind.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50541</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
